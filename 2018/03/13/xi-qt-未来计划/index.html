@@ -8,12 +8,12 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>
-    Hello World | Tech notes
+    xi-qt 未来计划 | Tech notes
   </title>
   <meta name="description" content="道早别，道枉寻，道久忘归者">
   
   <meta name="keywords" content="
-  
+  xi-qt
   ">
   
   <meta name="author" content="sw5cc">
@@ -127,23 +127,35 @@
     <i class="fa fa-user-o"></i>
     sw5cc
 
-    <span class="post-date float-right" title="{{moment(1520925414341).format('MMM DD, YYYY, h:mm:ss A')}}">
+    <span class="post-date float-right" title="{{moment(1520932244000).format('MMM DD, YYYY, h:mm:ss A')}}">
       <i class="fa fa-pencil-square-o"></i>
-      {{moment(1520925414341).fromNow()}}
+      {{moment(1520932244000).fromNow()}}
     </span>
   </h3>
 
   <article class="post-content">
-    <h1>Hello World</h1>
-    <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+    <h1>xi-qt 未来计划</h1>
+    <p>现在的xi-qt还只是一个HelloWorld级别的实现，这里做一些计划，一步一步来，争取到年底的时候这个xi-qt要基本满足编程使用。</p>
+<p>修订日期： 2018年3月14日</p>
+<h1 id="设计（程序结构）"><a href="#设计（程序结构）" class="headerlink" title="设计（程序结构）"></a>设计（程序结构）</h1><p>数据处理层</p>
+<ul>
+<li>通过JOSN-RPC从core获取linecache，抽象的line</li>
+<li>Core &lt;–(json-rpc)–&gt; LineCache</li>
+</ul>
+<p>渲染BITMAP层</p>
+<ul>
+<li>把抽象的line转换为显示模型中以cell为基本的screen中的实际ViewLine(包含wrap)，生成BITMAP(引入skia库硬件加速)</li>
+<li>LineCache &lt;–(Cell)–&gt; EditorModel</li>
+</ul>
+<p>呈现与交互层</p>
+<ul>
+<li>这一层开始处理滚动与缩放，与用户点击，拖动选择，输入点闪烁等功能，</li>
+<li>通过tile等技术完成局部绘制等，通过多线程延时渲染可以解决快速拖动时页面卡顿。</li>
+<li>EditorModel &lt;–(Input/Display)–&gt; EditorView</li>
+</ul>
+<h1 id="第三方库"><a href="#第三方库" class="headerlink" title="第三方库"></a>第三方库</h1><p>skia</p>
+<h1 id="具体计划"><a href="#具体计划" class="headerlink" title="具体计划"></a>具体计划</h1><p>上半年把项目推进到和xi-mac一个完成度，也就是除了效率问题，其他都要可以用；<br>下半年重点在改进页面渲染。</p>
+<h1 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h1><p>最近在看LUCI代码，写的真好，以后要把xi-qt的代码也写的这样才行。</p>
 
   </article>
 </div>
@@ -156,8 +168,8 @@
 
 <script>
   var disqus_config = function() {
-    this.page.url = "http://sw5cc.com/2018/03/13/hello-world/";
-    this.page.identifier = 1520925414;
+    this.page.url = "http://sw5cc.com/2018/03/13/xi-qt-未来计划/";
+    this.page.identifier = 1520932244;
   };
 
   (function() {
