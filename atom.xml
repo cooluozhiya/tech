@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sw5cc.com/"/>
-  <updated>2018-03-14T12:01:30.126Z</updated>
+  <updated>2018-03-14T12:18:19.633Z</updated>
   <id>http://sw5cc.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://sw5cc.com/2018/03/13/xi-qt-%E6%9C%AA%E6%9D%A5%E8%AE%A1%E5%88%92/"/>
     <id>http://sw5cc.com/2018/03/13/xi-qt-未来计划/</id>
     <published>2018-03-13T09:10:44.000Z</published>
-    <updated>2018-03-14T12:01:30.126Z</updated>
+    <updated>2018-03-14T12:18:19.633Z</updated>
     
     <content type="html"><![CDATA[<p>现在的xi-qt还只是一个HelloWorld级别的实现，这里做一些计划，一步一步来，争取到年底的时候这个xi-qt要基本满足编程使用。</p><p>修订日期： 2018年3月14日</p><h1 id="设计（程序结构）"><a href="#设计（程序结构）" class="headerlink" title="设计（程序结构）"></a>设计（程序结构）</h1><p>数据处理层</p><ul><li>通过JOSN-RPC从core获取linecache，抽象的line</li><li>Core &lt;–(json-rpc)–&gt; LineCache</li></ul><p>渲染BITMAP层</p><ul><li>把抽象的line转换为显示模型中以cell为基本的screen中的实际ViewLine(包含wrap)，生成BITMAP(引入skia库硬件加速)</li><li>LineCache &lt;–(Cell)–&gt; EditorModel</li></ul><p>呈现与交互层</p><ul><li>这一层开始处理滚动与缩放，与用户点击，拖动选择，输入点闪烁等功能，</li><li>通过tile等技术完成局部绘制等，通过多线程延时渲染可以解决快速拖动时页面卡顿。</li><li>EditorModel &lt;–(Input/Display)–&gt; EditorView</li></ul><h1 id="第三方库"><a href="#第三方库" class="headerlink" title="第三方库"></a>第三方库</h1><p>skia</p><h1 id="具体计划"><a href="#具体计划" class="headerlink" title="具体计划"></a>具体计划</h1><p>上半年把项目推进到和xi-mac一个完成度，也就是除了效率问题，其他都要可以用；<br>下半年重点在改进页面渲染。</p><h1 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h1><p>最近在看LCUI代码，写的真好，以后要把xi-qt的代码也写的这样才行。</p>]]></content>
     
@@ -36,7 +36,7 @@
     
     </summary>
     
-      <category term="xi-qt" scheme="http://sw5cc.com/categories/xi-qt/"/>
+      <category term="Code" scheme="http://sw5cc.com/categories/Code/"/>
     
     
       <category term="Qt" scheme="http://sw5cc.com/tags/Qt/"/>
