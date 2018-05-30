@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Tech notes</title>
+  <title>一些笔记</title>
   <icon>https://www.gravatar.com/avatar/6d35f0f5c411bd4bdcc3af3d396e3c53</icon>
   
   <link href="/atom.xml" rel="self"/>
