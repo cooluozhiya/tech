@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://sw5cc.com/"/>
+  <link href="https://sw5cc.com/"/>
   <updated>2018-03-14T12:18:19.633Z</updated>
-  <id>http://sw5cc.com/</id>
+  <id>https://sw5cc.com/</id>
   
   <author>
     <name>sw5cc</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>xi-qt 未来计划</title>
-    <link href="http://sw5cc.com/2018/03/13/xi-qt-%E6%9C%AA%E6%9D%A5%E8%AE%A1%E5%88%92/"/>
-    <id>http://sw5cc.com/2018/03/13/xi-qt-未来计划/</id>
+    <link href="https://sw5cc.com/2018/03/13/xi-qt-%E6%9C%AA%E6%9D%A5%E8%AE%A1%E5%88%92/"/>
+    <id>https://sw5cc.com/2018/03/13/xi-qt-未来计划/</id>
     <published>2018-03-13T09:10:44.000Z</published>
     <updated>2018-03-14T12:18:19.633Z</updated>
     
@@ -36,17 +36,17 @@
     
     </summary>
     
-      <category term="Code" scheme="http://sw5cc.com/categories/Code/"/>
+      <category term="Code" scheme="https://sw5cc.com/categories/Code/"/>
     
     
-      <category term="Qt" scheme="http://sw5cc.com/tags/Qt/"/>
+      <category term="Qt" scheme="https://sw5cc.com/tags/Qt/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://sw5cc.com/2018/03/13/hello-world/"/>
-    <id>http://sw5cc.com/2018/03/13/hello-world/</id>
+    <link href="https://sw5cc.com/2018/03/13/hello-world/"/>
+    <id>https://sw5cc.com/2018/03/13/hello-world/</id>
     <published>2018-03-13T07:16:54.341Z</published>
     <updated>2018-03-13T07:16:54.342Z</updated>
     
