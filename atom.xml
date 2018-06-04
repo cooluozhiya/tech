@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sw5cc.com/"/>
-  <updated>2018-06-02T11:14:55.579Z</updated>
+  <updated>2018-06-03T07:50:47.009Z</updated>
   <id>https://sw5cc.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C/C++ io system</title>
+    <link href="https://sw5cc.com/2018/06/03/C-C-io-system/"/>
+    <id>https://sw5cc.com/2018/06/03/C-C-io-system/</id>
+    <published>2018-06-03T04:23:07.000Z</published>
+    <updated>2018-06-03T07:50:47.009Z</updated>
+    
+    <content type="html"><![CDATA[<p>C/C++ 输入输出系统</p><h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><ul><li>逐行</li></ul><p>通过 getline<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// stdio</span></span><br><span class="line"><span class="built_in">string</span> s;</span><br><span class="line"><span class="keyword">while</span>(getline(<span class="built_in">cin</span>, s))</span><br><span class="line"></span><br><span class="line"><span class="comment">// file</span></span><br><span class="line"><span class="function">ifstream <span class="title">is</span><span class="params">(<span class="string">"abc.txt"</span>)</span></span>;</span><br><span class="line"><span class="keyword">while</span>(getline(is, s))</span><br></pre></td></tr></table></figure></p><p>通过fgets<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// stdio</span></span><br><span class="line"><span class="built_in">scanf</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// file</span></span><br><span class="line"><span class="keyword">char</span> buf[<span class="number">128</span>];</span><br><span class="line">file =fopen(<span class="string">"abc.txt"</span>,<span class="string">"r"</span>);</span><br><span class="line"><span class="keyword">while</span> (fgets(buf,<span class="number">128</span>, file)!=<span class="literal">NULL</span>)</span><br></pre></td></tr></table></figure></p><p>参考链接<br><a href="https://stackoverflow.com/questions/7868936/read-file-line-by-line" target="_blank" rel="noopener">https://stackoverflow.com/questions/7868936/read-file-line-by-line</a></p><ul><li>逐词</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">string s;</span><br><span class="line">while(cin &gt;&gt; s)</span><br></pre></td></tr></table></figure><ul><li>逐位（二进制）</li></ul><h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><ul><li>逐行</li><li>逐词</li><li>逐位</li></ul><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>函数列表<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>()      <span class="comment">// Print a formatted string to stdout.</span></span><br><span class="line"><span class="built_in">scanf</span>()       <span class="comment">// Read formatted data from stdin.</span></span><br><span class="line"><span class="built_in">putchar</span>()     <span class="comment">// Print a single character to stdout.</span></span><br><span class="line">getchar()     <span class="comment">// Read a single character from stdin.</span></span><br><span class="line"><span class="built_in">puts</span>()        <span class="comment">// Print a string to stdout.</span></span><br><span class="line">gets()        <span class="comment">// Read a line from stdin.</span></span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;C/C++ 输入输出系统&lt;/p&gt;
+&lt;h2 id=&quot;输入&quot;&gt;&lt;a href=&quot;#输入&quot; class=&quot;headerlink&quot; title=&quot;输入&quot;&gt;&lt;/a&gt;输入&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;逐行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;通过 getline&lt;br&gt;&lt;figure class
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>浅析Unicode, Font及其应用</title>

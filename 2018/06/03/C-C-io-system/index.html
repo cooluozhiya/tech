@@ -8,12 +8,12 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>
-    xi-qt 未来计划 | 一些笔记
+    C/C++ io system | 一些笔记
   </title>
   <meta name="description" content="人生如逆旅，我亦是行人">
   
   <meta name="keywords" content="
-  Qt
+  
   ">
   
   <meta name="author" content="sw5cc">
@@ -127,35 +127,34 @@
     <i class="fa fa-user-o"></i>
     sw5cc
 
-    <span class="post-date float-right" title="{{moment(1520932244000).format('MMM DD, YYYY, h:mm:ss A')}}">
+    <span class="post-date float-right" title="{{moment(1527999787000).format('MMM DD, YYYY, h:mm:ss A')}}">
       <i class="fa fa-pencil-square-o"></i>
-      {{moment(1520932244000).fromNow()}}
+      {{moment(1527999787000).fromNow()}}
     </span>
   </h3>
 
   <article class="post-content">
-    <h1>xi-qt 未来计划</h1>
-    <p>现在的xi-qt还只是一个HelloWorld级别的实现，这里做一些计划，一步一步来，争取到年底的时候这个xi-qt要基本满足编程使用。</p>
-<p>修订日期： 2018年3月14日</p>
-<h1 id="设计（程序结构）"><a href="#设计（程序结构）" class="headerlink" title="设计（程序结构）"></a>设计（程序结构）</h1><p>数据处理层</p>
-<ul>
-<li>通过JOSN-RPC从core获取linecache，抽象的line</li>
-<li>Core &lt;–(json-rpc)–&gt; LineCache</li>
+    <h1>C/C++ io system</h1>
+    <p>C/C++ 输入输出系统</p>
+<h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><ul>
+<li>逐行</li>
 </ul>
-<p>渲染BITMAP层</p>
+<p>通过 getline<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// stdio</span></span><br><span class="line"><span class="built_in">string</span> s;</span><br><span class="line"><span class="keyword">while</span>(getline(<span class="built_in">cin</span>, s))</span><br><span class="line"></span><br><span class="line"><span class="comment">// file</span></span><br><span class="line"><span class="function">ifstream <span class="title">is</span><span class="params">(<span class="string">"abc.txt"</span>)</span></span>;</span><br><span class="line"><span class="keyword">while</span>(getline(is, s))</span><br></pre></td></tr></table></figure></p>
+<p>通过fgets<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// stdio</span></span><br><span class="line"><span class="built_in">scanf</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// file</span></span><br><span class="line"><span class="keyword">char</span> buf[<span class="number">128</span>];</span><br><span class="line">file =fopen(<span class="string">"abc.txt"</span>,<span class="string">"r"</span>);</span><br><span class="line"><span class="keyword">while</span> (fgets(buf,<span class="number">128</span>, file)!=<span class="literal">NULL</span>)</span><br></pre></td></tr></table></figure></p>
+<p>参考链接<br><a href="https://stackoverflow.com/questions/7868936/read-file-line-by-line" target="_blank" rel="noopener">https://stackoverflow.com/questions/7868936/read-file-line-by-line</a></p>
 <ul>
-<li>把抽象的line转换为显示模型中以cell为基本的screen中的实际ViewLine(包含wrap)，生成BITMAP(引入skia库硬件加速)</li>
-<li>LineCache &lt;–(Cell)–&gt; EditorModel</li>
+<li>逐词</li>
 </ul>
-<p>呈现与交互层</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">string s;</span><br><span class="line">while(cin &gt;&gt; s)</span><br></pre></td></tr></table></figure>
 <ul>
-<li>这一层开始处理滚动与缩放，与用户点击，拖动选择，输入点闪烁等功能，</li>
-<li>通过tile等技术完成局部绘制等，通过多线程延时渲染可以解决快速拖动时页面卡顿。</li>
-<li>EditorModel &lt;–(Input/Display)–&gt; EditorView</li>
+<li>逐位（二进制）</li>
 </ul>
-<h1 id="第三方库"><a href="#第三方库" class="headerlink" title="第三方库"></a>第三方库</h1><p>skia</p>
-<h1 id="具体计划"><a href="#具体计划" class="headerlink" title="具体计划"></a>具体计划</h1><p>上半年把项目推进到和xi-mac一个完成度，也就是除了效率问题，其他都要可以用；<br>下半年重点在改进页面渲染。</p>
-<h1 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h1><p>最近在看LCUI代码，写的真好，以后要把xi-qt的代码也写的这样才行。</p>
+<h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><ul>
+<li>逐行</li>
+<li>逐词</li>
+<li>逐位</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>函数列表<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>()      <span class="comment">// Print a formatted string to stdout.</span></span><br><span class="line"><span class="built_in">scanf</span>()       <span class="comment">// Read formatted data from stdin.</span></span><br><span class="line"><span class="built_in">putchar</span>()     <span class="comment">// Print a single character to stdout.</span></span><br><span class="line">getchar()     <span class="comment">// Read a single character from stdin.</span></span><br><span class="line"><span class="built_in">puts</span>()        <span class="comment">// Print a string to stdout.</span></span><br><span class="line">gets()        <span class="comment">// Read a line from stdin.</span></span><br></pre></td></tr></table></figure></p>
 
   </article>
 </div>
@@ -168,8 +167,8 @@
 
 <script>
   var disqus_config = function() {
-    this.page.url = "https://sw5cc.com/2018/03/13/xi-qt-未来计划/";
-    this.page.identifier = 1520932244;
+    this.page.url = "https://sw5cc.com/2018/06/03/C-C-io-system/";
+    this.page.identifier = 1527999787;
   };
 
   (function() {
