@@ -8,12 +8,12 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>
-    xi-qt 未来计划 | 一些笔记
+    cpp-primer | 一些笔记
   </title>
   <meta name="description" content="人生如逆旅，我亦是行人">
   
   <meta name="keywords" content="
-  Qt
+  
   ">
   
   <meta name="author" content="sw5cc">
@@ -127,35 +127,170 @@
     <i class="fa fa-user-o"></i>
     sw5cc
 
-    <span class="post-date float-right" title="{{moment(1520932244000).format('MMM DD, YYYY, h:mm:ss A')}}">
+    <span class="post-date float-right" title="{{moment(1528125490000).format('MMM DD, YYYY, h:mm:ss A')}}">
       <i class="fa fa-pencil-square-o"></i>
-      {{moment(1520932244000).fromNow()}}
+      {{moment(1528125490000).fromNow()}}
     </span>
   </h3>
 
   <article class="post-content">
-    <h1>xi-qt 未来计划</h1>
-    <p>现在的xi-qt还只是一个HelloWorld级别的实现，这里做一些计划，一步一步来，争取到年底的时候这个xi-qt要基本满足编程使用。</p>
-<p>修订日期： 2018年3月14日</p>
-<h1 id="设计（程序结构）"><a href="#设计（程序结构）" class="headerlink" title="设计（程序结构）"></a>设计（程序结构）</h1><p>数据处理层</p>
+    <h1>cpp-primer</h1>
+    <p>第一章 开始</p>
 <ul>
-<li>通过JOSN-RPC从core获取linecache，抽象的line</li>
-<li>Core &lt;–(json-rpc)–&gt; LineCache</li>
+<li>编写一个简单的C++程序<ul>
+<li>编译、运行程序</li>
 </ul>
-<p>渲染BITMAP层</p>
+</li>
+<li>初识输入输出</li>
+<li>注释简介</li>
+<li>控制流<ul>
+<li>while语句</li>
+<li>for语句</li>
+<li>读取数量不定的输入数据</li>
+<li>if语句</li>
+</ul>
+</li>
+<li>类简介<ul>
+<li>Sales_item类</li>
+<li>初识成员函数</li>
+</ul>
+</li>
+<li>书店程序</li>
+<li>小结</li>
+<li>术语表</li>
+</ul>
+<p>第二章 变量和基本类型</p>
 <ul>
-<li>把抽象的line转换为显示模型中以cell为基本的screen中的实际ViewLine(包含wrap)，生成BITMAP(引入skia库硬件加速)</li>
-<li>LineCache &lt;–(Cell)–&gt; EditorModel</li>
+<li>基本内置类型<ul>
+<li>算术类型</li>
+<li>类型转换</li>
+<li>字面值常量</li>
 </ul>
-<p>呈现与交互层</p>
+</li>
+<li>变量<ul>
+<li>变量定义</li>
+<li>变量声明和定义的关系</li>
+<li>标识符</li>
+<li>名字和作用域</li>
+</ul>
+</li>
+<li>复合类型<ul>
+<li>引用</li>
+<li>指针</li>
+<li>理解复合类型的声明</li>
+</ul>
+</li>
+<li>const限定符<ul>
+<li>const的引用</li>
+<li>指针和const</li>
+<li>顶层const</li>
+<li>constexpr和常量表达式</li>
+</ul>
+</li>
+<li>处理类型<ul>
+<li>类型别名</li>
+<li>auto类型说明符</li>
+<li>decltype类型指示符</li>
+</ul>
+</li>
+<li>自定义数据结构<ul>
+<li>定义Sales_data类型</li>
+<li>使用Sales_data类型</li>
+<li>编写自己的头文件</li>
+</ul>
+</li>
+<li>小结</li>
+<li>术语表</li>
+</ul>
+<p>第三章 字符串、向量和数组</p>
 <ul>
-<li>这一层开始处理滚动与缩放，与用户点击，拖动选择，输入点闪烁等功能，</li>
-<li>通过tile等技术完成局部绘制等，通过多线程延时渲染可以解决快速拖动时页面卡顿。</li>
-<li>EditorModel &lt;–(Input/Display)–&gt; EditorView</li>
+<li>命名空间的using声明</li>
+<li>标准库类型string<ul>
+<li>定义和初始化string对象</li>
+<li>string对象上的操作</li>
+<li>处理string对象中的字符</li>
 </ul>
-<h1 id="第三方库"><a href="#第三方库" class="headerlink" title="第三方库"></a>第三方库</h1><p>skia</p>
-<h1 id="具体计划"><a href="#具体计划" class="headerlink" title="具体计划"></a>具体计划</h1><p>上半年把项目推进到和xi-mac一个完成度，也就是除了效率问题，其他都要可以用；<br>下半年重点在改进页面渲染。</p>
-<h1 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h1><p>最近在看LCUI代码，写的真好，以后要把xi-qt的代码也写的这样才行。</p>
+</li>
+<li>标准库类型vector<ul>
+<li>定义和初始化vector对象</li>
+<li>向vector对象添加元素</li>
+<li>其他vetor操作</li>
+</ul>
+</li>
+<li>迭代器介绍<ul>
+<li>使用迭代器</li>
+<li>迭代器运算</li>
+</ul>
+</li>
+<li>数组<ul>
+<li>定义和初始化内置数组</li>
+<li>访问数组元素</li>
+<li>指针和数组</li>
+<li>C风格字符串</li>
+<li>与旧代码的接口</li>
+</ul>
+</li>
+<li>多维数组</li>
+<li>小结</li>
+<li>术语表</li>
+</ul>
+<p>第四章 表达式</p>
+<ul>
+<li>基础<ul>
+<li>基本概念</li>
+<li>优先级与结合律</li>
+<li>求值顺序</li>
+</ul>
+</li>
+<li>算术运算符</li>
+<li>逻辑和关系运算符</li>
+<li>赋值运算符</li>
+<li>递增和递减运算符</li>
+<li>成员访问运算符</li>
+<li>条件运算符</li>
+<li>位运算符</li>
+<li>sizeof运算符</li>
+<li>逗号运算符</li>
+<li>类型转换<ul>
+<li>算术转换</li>
+<li>其他隐式类型转换</li>
+<li>显示转换</li>
+</ul>
+</li>
+<li>运算符优先级表</li>
+<li>小结</li>
+<li>术语表</li>
+</ul>
+<h2 id="第五章-语句"><a href="#第五章-语句" class="headerlink" title="第五章 语句"></a>第五章 语句</h2><ul>
+<li>简单语句</li>
+<li>语句作用域</li>
+<li>条件语句<ul>
+<li>if语句</li>
+<li>switch语句</li>
+</ul>
+</li>
+<li>迭代语句<ul>
+<li>while语句</li>
+<li>传统的for语句</li>
+<li>范围for语句</li>
+<li>do while语句</li>
+</ul>
+</li>
+<li>跳转语句<ul>
+<li>break语句</li>
+<li>continue语句</li>
+<li>goto语句</li>
+</ul>
+</li>
+<li>try语句块和异常处理<ul>
+<li>throw表达式</li>
+<li>try语句块</li>
+<li>标准异常</li>
+</ul>
+</li>
+<li>小结</li>
+<li>术语表</li>
+</ul>
 
   </article>
 </div>
@@ -168,8 +303,8 @@
 
 <script>
   var disqus_config = function() {
-    this.page.url = "https://sw5cc.com/2018/03/13/xi-qt-未来计划/";
-    this.page.identifier = 1520932244;
+    this.page.url = "https://sw5cc.com/2018/06/04/cpp-primer/";
+    this.page.identifier = 1528125490;
   };
 
   (function() {

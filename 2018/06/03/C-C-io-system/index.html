@@ -72,7 +72,7 @@
           <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
         </li>
         <li class="user-nav-logo">
-          <a><img src="https://avatars3.githubusercontent.com/u/36060008"> <i class="fa fa-caret-down"></i></i></a>
+          <a><img src="https://images2018.cnblogs.com/blog/1396266/201806/1396266-20180609220546325-2002575652.jpg"> <i class="fa fa-caret-down"></i></i></a>
         </li>
       </ul>
     </div>
@@ -87,7 +87,7 @@
         <a href="/archives" class="header-toolbar-left"><i
                   class="fa fa-file-text"></i> Posts </a>
         <a href="/archives"
-           class="header-toolbar-right"> 4 </a>
+           class="header-toolbar-right"> 5 </a>
       </li>
       <li>
         <a href="/tags" class="header-toolbar-left"><i
@@ -140,12 +140,12 @@
 <li>逐行</li>
 </ul>
 <p>通过 getline<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// stdio</span></span><br><span class="line"><span class="built_in">string</span> s;</span><br><span class="line"><span class="keyword">while</span>(getline(<span class="built_in">cin</span>, s))</span><br><span class="line"></span><br><span class="line"><span class="comment">// file</span></span><br><span class="line"><span class="function">ifstream <span class="title">is</span><span class="params">(<span class="string">"abc.txt"</span>)</span></span>;</span><br><span class="line"><span class="keyword">while</span>(getline(is, s))</span><br></pre></td></tr></table></figure></p>
-<p>通过fgets<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// stdio</span></span><br><span class="line"><span class="built_in">scanf</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// file</span></span><br><span class="line"><span class="keyword">char</span> buf[<span class="number">128</span>];</span><br><span class="line">file =fopen(<span class="string">"abc.txt"</span>,<span class="string">"r"</span>);</span><br><span class="line"><span class="keyword">while</span> (fgets(buf,<span class="number">128</span>, file)!=<span class="literal">NULL</span>)</span><br></pre></td></tr></table></figure></p>
-<p>参考链接<br><a href="https://stackoverflow.com/questions/7868936/read-file-line-by-line" target="_blank" rel="noopener">https://stackoverflow.com/questions/7868936/read-file-line-by-line</a></p>
+<p>通过 fgets<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// stdio</span></span><br><span class="line"><span class="built_in">scanf</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// file</span></span><br><span class="line"><span class="keyword">char</span> buf[<span class="number">128</span>];</span><br><span class="line">file =fopen(<span class="string">"abc.txt"</span>,<span class="string">"r"</span>);</span><br><span class="line"><span class="keyword">while</span> (fgets(buf,<span class="number">128</span>, file)!=<span class="literal">NULL</span>)</span><br></pre></td></tr></table></figure></p>
+<p>通过 fgetc<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
 <ul>
 <li>逐词</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">string s;</span><br><span class="line">while(cin &gt;&gt; s)</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// cin</span></span><br><span class="line"><span class="built_in">string</span> s;</span><br><span class="line"><span class="keyword">while</span>(<span class="built_in">cin</span> &gt;&gt; s)</span><br><span class="line"></span><br><span class="line"><span class="comment">// getline -&gt; stringstream</span></span><br><span class="line"><span class="keyword">while</span>(getline(<span class="built_in">cin</span>, s))</span><br><span class="line"><span class="built_in">std</span>::<span class="function"><span class="built_in">istringstream</span> <span class="title">iss</span><span class="params">(s)</span></span>;</span><br><span class="line">iss &gt;&gt; a &gt;&gt; b;</span><br></pre></td></tr></table></figure>
 <ul>
 <li>逐位（二进制）</li>
 </ul>
@@ -154,7 +154,8 @@
 <li>逐词</li>
 <li>逐位</li>
 </ul>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>函数列表<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>()      <span class="comment">// Print a formatted string to stdout.</span></span><br><span class="line"><span class="built_in">scanf</span>()       <span class="comment">// Read formatted data from stdin.</span></span><br><span class="line"><span class="built_in">putchar</span>()     <span class="comment">// Print a single character to stdout.</span></span><br><span class="line">getchar()     <span class="comment">// Read a single character from stdin.</span></span><br><span class="line"><span class="built_in">puts</span>()        <span class="comment">// Print a string to stdout.</span></span><br><span class="line">gets()        <span class="comment">// Read a line from stdin.</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>参考链接<br><a href="https://stackoverflow.com/questions/7868936/read-file-line-by-line" target="_blank" rel="noopener">https://stackoverflow.com/questions/7868936/read-file-line-by-line</a><br><a href="https://stackoverflow.com/questions/3910326/c-read-file-line-by-line-then-split-each-line-using-the-delimiter" target="_blank" rel="noopener">https://stackoverflow.com/questions/3910326/c-read-file-line-by-line-then-split-each-line-using-the-delimiter</a><br><a href="https://stackoverflow.com/questions/3081289/how-to-read-a-line-from-a-text-file-in-c-c" target="_blank" rel="noopener">https://stackoverflow.com/questions/3081289/how-to-read-a-line-from-a-text-file-in-c-c</a></p>
+<p>函数列表<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>()      <span class="comment">// Print a formatted string to stdout.</span></span><br><span class="line"><span class="built_in">scanf</span>()       <span class="comment">// Read formatted data from stdin.</span></span><br><span class="line"><span class="built_in">putchar</span>()     <span class="comment">// Print a single character to stdout.</span></span><br><span class="line">getchar()     <span class="comment">// Read a single character from stdin.</span></span><br><span class="line"><span class="built_in">puts</span>()        <span class="comment">// Print a string to stdout.</span></span><br><span class="line">gets()        <span class="comment">// Read a line from stdin.</span></span><br></pre></td></tr></table></figure></p>
 
   </article>
 </div>
