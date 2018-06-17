@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sw5cc.com/"/>
-  <updated>2018-06-17T14:28:01.212Z</updated>
+  <updated>2018-06-17T14:28:35.599Z</updated>
   <id>https://sw5cc.com/</id>
   
   <author>
@@ -21,18 +21,22 @@
     <link href="https://sw5cc.com/2018/06/17/programming-art/"/>
     <id>https://sw5cc.com/2018/06/17/programming-art/</id>
     <published>2018-06-17T12:49:23.000Z</published>
-    <updated>2018-06-17T14:28:01.212Z</updated>
+    <updated>2018-06-17T14:28:35.599Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="王选《软件设计方法》"><a href="#王选《软件设计方法》" class="headerlink" title="王选《软件设计方法》"></a>王选《软件设计方法》</h2><p>第一章 结构程序设计的发展</p><ul><li>软件生存期</li><li>软件开发和维护中存在的问题</li><li>好程序的标准</li><li>结构程序设计的发展历史</li><li>结构程序设计的主要内容<ul><li>限制使用 GO TO 语句</li><li>逐步求精的设计方法</li><li>自顶向下的设计，编码和调试</li><li>主程序员组的组织形式</li></ul></li><li>把非结构化程序变成结构化程序<ul><li>Mills 方法</li><li>应用 Mills 方法的例子</li><li>状态变量法</li></ul></li><li>软件设计的工具<ul><li>结构化的流程图</li><li>Chapin 图</li><li>Yourdon 的结构图</li><li>伪代码</li><li>Jackson 结构图解和概要逻辑</li><li>Warnier 图解</li></ul></li></ul><p>第二章 基于数据结构的 Jackson 设计方法</p><ul><li>一个例子说明程序结构的重要性</li><li>程序结构应该基于数据结构</li><li>基本设计方法</li><li>串联输入文件的读入方法<ul><li>串联输入文件的一个例子</li><li>预先读</li><li>处理输入文件的又一例子</li></ul></li><li>多个数据结构<ul><li>结构对应</li><li>整理</li></ul></li><li>错误数据的处理</li><li>回溯方法<ul><li>预先读多个记录</li><li>先假设后验证的回溯方法</li><li>先假设后验证所带来的副作用</li></ul></li><li>结构冲突<ul><li>次序冲突</li><li>边界冲突</li></ul></li><li>程序转换<ul><li>增加中间文件后带来的问题</li><li>程序转换</li><li>在不修改编译系统的前提下进行程序转换的方法</li><li>转换了的程序与调用程序之间的控制信息传递</li></ul></li></ul><p>第三章 Warnier 的 LCP 方法</p><ul><li>判定表<ul><li>判定表的形式和优点</li><li>判定表的简化和 ELSE 列</li><li>把判定表转换为程序</li><li>用判定表表示程序算法流程</li></ul></li><li>Warnier 的 LCP 方法</li><li>LCP 方法的程序检查和调试<ul><li>程序和正确性检查</li><li>程序的调试</li></ul></li><li>LCP 方法的程序修改</li><li>LCP 方法和 Jackson 方法的比较</li></ul><p>第四章 Yourdon 的结构化设计方法</p><ul><li>耦合<ul><li>模块的耦合对系统复杂程度的影响</li><li>影响耦合的因素</li><li>公共环境的耦合</li><li>内容耦合</li></ul></li><li>内聚</li><li>模块类型和系统结构方面的问题<ul><li>模块类型</li><li>系统结构方面的一些问题</li></ul></li><li>基于数据流图的设计步骤<ul><li>以变换为中心的系统的结构设计步骤</li><li>一个例子– 病人监督程序</li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>第一章 结构程序设计的发展</p><ul><li>软件生存期</li><li>软件开发和维护中存在的问题</li><li>好程序的标准</li><li>结构程序设计的发展历史</li><li>结构程序设计的主要内容<ul><li>限制使用 GO TO 语句</li><li>逐步求精的设计方法</li><li>自顶向下的设计，编码和调试</li><li>主程序员组的组织形式</li></ul></li><li>把非结构化程序变成结构化程序<ul><li>Mills 方法</li><li>应用 Mills 方法的例子</li><li>状态变量法</li></ul></li><li>软件设计的工具<ul><li>结构化的流程图</li><li>Chapin 图</li><li>Yourdon 的结构图</li><li>伪代码</li><li>Jackson 结构图解和概要逻辑</li><li>Warnier 图解</li></ul></li></ul><p>第二章 基于数据结构的 Jackson 设计方法</p><ul><li>一个例子说明程序结构的重要性</li><li>程序结构应该基于数据结构</li><li>基本设计方法</li><li>串联输入文件的读入方法<ul><li>串联输入文件的一个例子</li><li>预先读</li><li>处理输入文件的又一例子</li></ul></li><li>多个数据结构<ul><li>结构对应</li><li>整理</li></ul></li><li>错误数据的处理</li><li>回溯方法<ul><li>预先读多个记录</li><li>先假设后验证的回溯方法</li><li>先假设后验证所带来的副作用</li></ul></li><li>结构冲突<ul><li>次序冲突</li><li>边界冲突</li></ul></li><li>程序转换<ul><li>增加中间文件后带来的问题</li><li>程序转换</li><li>在不修改编译系统的前提下进行程序转换的方法</li><li>转换了的程序与调用程序之间的控制信息传递</li></ul></li></ul><p>第三章 Warnier 的 LCP 方法</p><ul><li>判定表<ul><li>判定表的形式和优点</li><li>判定表的简化和 ELSE 列</li><li>把判定表转换为程序</li><li>用判定表表示程序算法流程</li></ul></li><li>Warnier 的 LCP 方法</li><li>LCP 方法的程序检查和调试<ul><li>程序和正确性检查</li><li>程序的调试</li></ul></li><li>LCP 方法的程序修改</li><li>LCP 方法和 Jackson 方法的比较</li></ul><p>第四章 Yourdon 的结构化设计方法</p><ul><li>耦合<ul><li>模块的耦合对系统复杂程度的影响</li><li>影响耦合的因素</li><li>公共环境的耦合</li><li>内容耦合</li></ul></li><li>内聚</li><li>模块类型和系统结构方面的问题<ul><li>模块类型</li><li>系统结构方面的一些问题</li></ul></li><li>基于数据流图的设计步骤<ul><li>以变换为中心的系统的结构设计步骤</li><li>一个例子– 病人监督程序</li></ul></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;王选《软件设计方法》&quot;&gt;&lt;a href=&quot;#王选《软件设计方法》&quot; class=&quot;headerlink&quot; title=&quot;王选《软件设计方法》&quot;&gt;&lt;/a&gt;王选《软件设计方法》&lt;/h2&gt;&lt;p&gt;第一章 结构程序设计的发展&lt;/p&gt;
+        &lt;p&gt;第一章 结构程序设计的发展&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;软件生存期&lt;/li&gt;
-
+&lt;li&gt;软件开发和维护中存在的问题&lt;/li&gt;
+&lt;li&gt;好程序的标准&lt;/li&gt;
+&lt;li&gt;结构程序设计的发展历史&lt;/li&gt;
+&lt;li&gt;结构程序设计的主要内容&lt;ul&gt;
+&lt;li&gt;限制使用 GO TO 语句&lt;/
       
     
     </summary>
