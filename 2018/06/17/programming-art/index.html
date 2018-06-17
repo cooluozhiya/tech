@@ -8,7 +8,7 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>
-    cpp-primer | 一些笔记
+    programming art | 一些笔记
   </title>
   <meta name="description" content="人生如逆旅，我亦是行人">
   
@@ -127,169 +127,117 @@
     <i class="fa fa-user-o"></i>
     sw5cc
 
-    <span class="post-date float-right" title="{{moment(1528125490000).format('MMM DD, YYYY, h:mm:ss A')}}">
+    <span class="post-date float-right" title="{{moment(1529239763000).format('MMM DD, YYYY, h:mm:ss A')}}">
       <i class="fa fa-pencil-square-o"></i>
-      {{moment(1528125490000).fromNow()}}
+      {{moment(1529239763000).fromNow()}}
     </span>
   </h3>
 
   <article class="post-content">
-    <h1>cpp-primer</h1>
-    <p>第一章 开始</p>
+    <h1>programming art</h1>
+    <h2 id="王选《软件设计方法》"><a href="#王选《软件设计方法》" class="headerlink" title="王选《软件设计方法》"></a>王选《软件设计方法》</h2><p>第一章 结构程序设计的发展</p>
 <ul>
-<li>编写一个简单的C++程序<ul>
-<li>编译、运行程序</li>
+<li>软件生存期</li>
+<li>软件开发和维护中存在的问题</li>
+<li>好程序的标准</li>
+<li>结构程序设计的发展历史</li>
+<li>结构程序设计的主要内容<ul>
+<li>限制使用 GO TO 语句</li>
+<li>逐步求精的设计方法</li>
+<li>自顶向下的设计，编码和调试</li>
+<li>主程序员组的组织形式</li>
 </ul>
 </li>
-<li>初识输入输出</li>
-<li>注释简介</li>
-<li>控制流<ul>
-<li>while语句</li>
-<li>for语句</li>
-<li>读取数量不定的输入数据</li>
-<li>if语句</li>
+<li>把非结构化程序变成结构化程序<ul>
+<li>Mills 方法</li>
+<li>应用 Mills 方法的例子</li>
+<li>状态变量法</li>
 </ul>
 </li>
-<li>类简介<ul>
-<li>Sales_item类</li>
-<li>初识成员函数</li>
+<li>软件设计的工具<ul>
+<li>结构化的流程图</li>
+<li>Chapin 图</li>
+<li>Yourdon 的结构图</li>
+<li>伪代码</li>
+<li>Jackson 结构图解和概要逻辑</li>
+<li>Warnier 图解</li>
 </ul>
 </li>
-<li>书店程序</li>
-<li>小结</li>
-<li>术语表</li>
 </ul>
-<p>第二章 变量和基本类型</p>
+<p>第二章 基于数据结构的 Jackson 设计方法</p>
 <ul>
-<li>基本内置类型<ul>
-<li>算术类型</li>
-<li>类型转换</li>
-<li>字面值常量</li>
+<li>一个例子说明程序结构的重要性</li>
+<li>程序结构应该基于数据结构</li>
+<li>基本设计方法</li>
+<li>串联输入文件的读入方法<ul>
+<li>串联输入文件的一个例子</li>
+<li>预先读</li>
+<li>处理输入文件的又一例子</li>
 </ul>
 </li>
-<li>变量<ul>
-<li>变量定义</li>
-<li>变量声明和定义的关系</li>
-<li>标识符</li>
-<li>名字和作用域</li>
+<li>多个数据结构<ul>
+<li>结构对应</li>
+<li>整理</li>
 </ul>
 </li>
-<li>复合类型<ul>
-<li>引用</li>
-<li>指针</li>
-<li>理解复合类型的声明</li>
+<li>错误数据的处理</li>
+<li>回溯方法<ul>
+<li>预先读多个记录</li>
+<li>先假设后验证的回溯方法</li>
+<li>先假设后验证所带来的副作用</li>
 </ul>
 </li>
-<li>const限定符<ul>
-<li>const的引用</li>
-<li>指针和const</li>
-<li>顶层const</li>
-<li>constexpr和常量表达式</li>
+<li>结构冲突<ul>
+<li>次序冲突</li>
+<li>边界冲突</li>
 </ul>
 </li>
-<li>处理类型<ul>
-<li>类型别名</li>
-<li>auto类型说明符</li>
-<li>decltype类型指示符</li>
+<li>程序转换<ul>
+<li>增加中间文件后带来的问题</li>
+<li>程序转换</li>
+<li>在不修改编译系统的前提下进行程序转换的方法</li>
+<li>转换了的程序与调用程序之间的控制信息传递</li>
 </ul>
 </li>
-<li>自定义数据结构<ul>
-<li>定义Sales_data类型</li>
-<li>使用Sales_data类型</li>
-<li>编写自己的头文件</li>
 </ul>
-</li>
-<li>小结</li>
-<li>术语表</li>
-</ul>
-<p>第三章 字符串、向量和数组</p>
+<p>第三章 Warnier 的 LCP 方法</p>
 <ul>
-<li>命名空间的using声明</li>
-<li>标准库类型string<ul>
-<li>定义和初始化string对象</li>
-<li>string对象上的操作</li>
-<li>处理string对象中的字符</li>
+<li>判定表<ul>
+<li>判定表的形式和优点</li>
+<li>判定表的简化和 ELSE 列</li>
+<li>把判定表转换为程序</li>
+<li>用判定表表示程序算法流程</li>
 </ul>
 </li>
-<li>标准库类型vector<ul>
-<li>定义和初始化vector对象</li>
-<li>向vector对象添加元素</li>
-<li>其他vetor操作</li>
+<li>Warnier 的 LCP 方法</li>
+<li>LCP 方法的程序检查和调试<ul>
+<li>程序和正确性检查</li>
+<li>程序的调试</li>
 </ul>
 </li>
-<li>迭代器介绍<ul>
-<li>使用迭代器</li>
-<li>迭代器运算</li>
+<li>LCP 方法的程序修改</li>
+<li>LCP 方法和 Jackson 方法的比较</li>
 </ul>
-</li>
-<li>数组<ul>
-<li>定义和初始化内置数组</li>
-<li>访问数组元素</li>
-<li>指针和数组</li>
-<li>C风格字符串</li>
-<li>与旧代码的接口</li>
-</ul>
-</li>
-<li>多维数组</li>
-<li>小结</li>
-<li>术语表</li>
-</ul>
-<p>第四章 表达式</p>
+<p>第四章 Yourdon 的结构化设计方法</p>
 <ul>
-<li>基础<ul>
-<li>基本概念</li>
-<li>优先级与结合律</li>
-<li>求值顺序</li>
+<li>耦合<ul>
+<li>模块的耦合对系统复杂程度的影响</li>
+<li>影响耦合的因素</li>
+<li>公共环境的耦合</li>
+<li>内容耦合</li>
 </ul>
 </li>
-<li>算术运算符</li>
-<li>逻辑和关系运算符</li>
-<li>赋值运算符</li>
-<li>递增和递减运算符</li>
-<li>成员访问运算符</li>
-<li>条件运算符</li>
-<li>位运算符</li>
-<li>sizeof运算符</li>
-<li>逗号运算符</li>
-<li>类型转换<ul>
-<li>算术转换</li>
-<li>其他隐式类型转换</li>
-<li>显示转换</li>
+<li>内聚</li>
+<li>模块类型和系统结构方面的问题<ul>
+<li>模块类型</li>
+<li>系统结构方面的一些问题</li>
 </ul>
 </li>
-<li>运算符优先级表</li>
-<li>小结</li>
-<li>术语表</li>
-</ul>
-<h2 id="第五章-语句"><a href="#第五章-语句" class="headerlink" title="第五章 语句"></a>第五章 语句</h2><ul>
-<li>简单语句</li>
-<li>语句作用域</li>
-<li>条件语句<ul>
-<li>if语句</li>
-<li>switch语句</li>
+<li>基于数据流图的设计步骤<ul>
+<li>以变换为中心的系统的结构设计步骤</li>
+<li>一个例子– 病人监督程序</li>
 </ul>
 </li>
-<li>迭代语句<ul>
-<li>while语句</li>
-<li>传统的for语句</li>
-<li>范围for语句</li>
-<li>do while语句</li>
-</ul>
-</li>
-<li>跳转语句<ul>
-<li>break语句</li>
-<li>continue语句</li>
-<li>goto语句</li>
-</ul>
-</li>
-<li>try语句块和异常处理<ul>
-<li>throw表达式</li>
-<li>try语句块</li>
-<li>标准异常</li>
-</ul>
-</li>
-<li>小结</li>
-<li>术语表</li>
 </ul>
 
   </article>
@@ -303,8 +251,8 @@
 
 <script>
   var disqus_config = function() {
-    this.page.url = "https://sw5cc.com/2018/06/04/cpp-primer/";
-    this.page.identifier = 1528125490;
+    this.page.url = "https://sw5cc.com/2018/06/17/programming-art/";
+    this.page.identifier = 1529239763;
   };
 
   (function() {
