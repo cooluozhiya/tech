@@ -3,11 +3,11 @@
   <title>一些笔记</title>
   <icon>https://www.gravatar.com/avatar/6d35f0f5c411bd4bdcc3af3d396e3c53</icon>
   
-  <link href="/atom.xml" rel="self"/>
+  <link href="/tech/atom.xml" rel="self"/>
   
-  <link href="https://sw5cc.com/"/>
+  <link href="https://sw5cc.com/tech/"/>
   <updated>2018-06-17T14:28:35.599Z</updated>
-  <id>https://sw5cc.com/</id>
+  <id>https://sw5cc.com/tech/</id>
   
   <author>
     <name>sw5cc</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>王选《软件设计方法》</title>
-    <link href="https://sw5cc.com/2018/06/17/programming-art/"/>
-    <id>https://sw5cc.com/2018/06/17/programming-art/</id>
+    <link href="https://sw5cc.com/tech/2018/06/17/programming-art/"/>
+    <id>https://sw5cc.com/tech/2018/06/17/programming-art/</id>
     <published>2018-06-17T12:49:23.000Z</published>
     <updated>2018-06-17T14:28:35.599Z</updated>
     
@@ -46,8 +46,8 @@
   
   <entry>
     <title>cpp-primer</title>
-    <link href="https://sw5cc.com/2018/06/04/cpp-primer/"/>
-    <id>https://sw5cc.com/2018/06/04/cpp-primer/</id>
+    <link href="https://sw5cc.com/tech/2018/06/04/cpp-primer/"/>
+    <id>https://sw5cc.com/tech/2018/06/04/cpp-primer/</id>
     <published>2018-06-04T15:18:10.000Z</published>
     <updated>2018-06-05T14:55:57.146Z</updated>
     
@@ -77,8 +77,8 @@
   
   <entry>
     <title>C/C++ io system</title>
-    <link href="https://sw5cc.com/2018/06/03/C-C-io-system/"/>
-    <id>https://sw5cc.com/2018/06/03/C-C-io-system/</id>
+    <link href="https://sw5cc.com/tech/2018/06/03/C-C-io-system/"/>
+    <id>https://sw5cc.com/tech/2018/06/03/C-C-io-system/</id>
     <published>2018-06-03T04:23:07.000Z</published>
     <updated>2018-06-05T12:14:29.145Z</updated>
     
@@ -102,8 +102,8 @@
   
   <entry>
     <title>浅析Unicode, Font及其应用</title>
-    <link href="https://sw5cc.com/2018/06/02/Unicode-Font-Application/"/>
-    <id>https://sw5cc.com/2018/06/02/Unicode-Font-Application/</id>
+    <link href="https://sw5cc.com/tech/2018/06/02/Unicode-Font-Application/"/>
+    <id>https://sw5cc.com/tech/2018/06/02/Unicode-Font-Application/</id>
     <published>2018-06-02T06:04:20.000Z</published>
     <updated>2018-06-02T11:14:55.579Z</updated>
     
@@ -121,14 +121,14 @@
     </summary>
     
     
-      <category term="unicode" scheme="https://sw5cc.com/tags/unicode/"/>
+      <category term="unicode" scheme="https://sw5cc.com/tech/tags/unicode/"/>
     
   </entry>
   
   <entry>
     <title>xi-qt 未来计划</title>
-    <link href="https://sw5cc.com/2018/03/13/xi-qt-%E6%9C%AA%E6%9D%A5%E8%AE%A1%E5%88%92/"/>
-    <id>https://sw5cc.com/2018/03/13/xi-qt-未来计划/</id>
+    <link href="https://sw5cc.com/tech/2018/03/13/xi-qt-%E6%9C%AA%E6%9D%A5%E8%AE%A1%E5%88%92/"/>
+    <id>https://sw5cc.com/tech/2018/03/13/xi-qt-未来计划/</id>
     <published>2018-03-13T09:10:44.000Z</published>
     <updated>2018-03-14T12:18:19.633Z</updated>
     
@@ -145,17 +145,17 @@
     
     </summary>
     
-      <category term="Code" scheme="https://sw5cc.com/categories/Code/"/>
+      <category term="Code" scheme="https://sw5cc.com/tech/categories/Code/"/>
     
     
-      <category term="Qt" scheme="https://sw5cc.com/tags/Qt/"/>
+      <category term="Qt" scheme="https://sw5cc.com/tech/tags/Qt/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://sw5cc.com/2018/03/13/hello-world/"/>
-    <id>https://sw5cc.com/2018/03/13/hello-world/</id>
+    <link href="https://sw5cc.com/tech/2018/03/13/hello-world/"/>
+    <id>https://sw5cc.com/tech/2018/03/13/hello-world/</id>
     <published>2018-03-13T07:16:54.341Z</published>
     <updated>2018-03-13T07:16:54.342Z</updated>
     
